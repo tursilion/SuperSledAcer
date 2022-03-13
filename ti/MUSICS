@@ -1,0 +1,170 @@
+intmus()
+{ #asm
+       LI R0,MUS#1
+       MOV R0,@MP1
+       INCT R0
+       MOV *R0,@MD1
+       LI R0,MUS#2
+       MOV R0,@MP2
+       INCT R0
+       MOV *R0,@MD2
+       LI R0,MUS#3
+       MOV R0,@MP3
+       INCT R0
+       MOV *R0,@MD3
+       CLR R0
+       MOV R0,@MV1
+       LI R0,>0004
+       MOV R0,@MV2
+       MOV R0,@MV3
+       MOV R0,@MC
+#endasm
+}
+ 
+muspas()
+{ for (x=0; x<2000; x++)
+  { music(); k=key(1,&s); k=k;}
+}
+ 
+music()
+{ mc++;
+  if (mc==55)
+  { mc=0;
+    md1--;
+    if (md1==0)
+    { #asm
+       MOV @MP1,R0
+       AI R0,4
+       LI R1,ENDM#1
+       C R0,R1
+       JNE POI#1
+       LI R0,RMUS#1
+POI#1  MOV R0,@MP1
+       INCT R0
+       MOV *R0,@MD1
+#endasm
+      mv1=0;
+    }
+    #asm
+       MOV @MP1,R0
+       MOV *R0,R1
+       AI R1,>8000
+       MOVB R1,@>8400
+       SWPB R1
+       MOVB R1,@>8400
+#endasm
+    md2--;
+    if (md2==0)
+    { #asm
+       MOV @MP2,R0
+       AI R0,4
+       LI R1,ENDM#2
+       C R0,R1
+       JNE POI#2
+       LI R0,RMUS#2
+POI#2  MOV R0,@MP2
+       INCT R0
+       MOV *R0,@MD2
+#endasm
+      mv2=4;
+}
+    #asm
+       MOV @MP2,R0
+       MOV *R0,R1
+       AI R1,>A000
+       MOVB R1,@>8400
+       SWPB R1
+       MOVB R1,@>8400
+#endasm
+    md3--;
+    if (md3==0)
+    { #asm
+       MOV @MP3,R0
+       AI R0,4
+       LI R1,ENDM#3
+       C R0,R1
+       JNE POI#3
+       LI R0,RMUS#3
+POI#3  MOV R0,@MP3
+       INCT R0
+       MOV *R0,@MD3
+#endasm
+      mv3=4;
+    }
+    #asm
+       MOV @MP3,R0
+       MOV *R0,R1
+       AI R1,>C000
+       MOVB R1,@>8400
+       SWPB R1
+       MOVB R1,@>8400
+       MOV @MV1,R0
+       SWPB R0
+       AI R0,>9000
+       MOVB R0,@>8400
+       MOV @MV2,R0
+       SWPB R0
+       AI R0,>B000
+       MOVB R0,@>8400
+       MOV @MV3,R0
+       SWPB R0
+       AI R0,>D000
+       MOVB R0,@>8400
+#endasm
+mv1=mv1+3; if (mv1>15) mv1=15;
+}
+}
+ 
+#asm
+PA EQU >300
+A2 EQU >E0F
+G2 EQU >D11
+C3 EQU >60D
+D3 EQU >E0B
+A4 EQU >F07
+B4 EQU >107
+C5 EQU >B06
+D5 EQU >F05
+E5 EQU >505
+AX EQU >E07
+BX EQU >007
+CY EQU >A06
+DY EQU >E05
+EY EQU >405
+ 
+MUS#1  DATA A2,2,C3,2,C3,2,A2,2,C3,2,C3,2
+       DATA A2,2,C3,2,A2,2,C3,2,C3,2,A2,2
+       DATA C3,2,C3,2,A2,2,C3,2
+RMUS#1 DATA A2,2,C3,2,C3,2,A2,2,C3,2,C3,2
+       DATA A2,2,C3,2,A2,2,C3,2,C3,2,A2,2
+       DATA C3,2,C3,2,A2,2,C3,2,A2,2,C3,2
+       DATA C3,2,A2,2,C3,2,C3,2,A2,2,C3,2
+       DATA A2,2,C3,2,C3,2,A2,2,C3,2,C3,2
+       DATA A2,2,C3,2,A2,2,C3,2,C3,2,A2,2
+       DATA C3,2,C3,2,A2,2,C3,2,G2,2,D3,2
+       DATA D3,2,G2,2,D3,2,D3,2,G2,2,D3,2
+       DATA G2,2,D3,2,D3,2,G2,2
+       DATA D3,2,D3,2,G2,2,D3,2,G2,2,D3,2
+       DATA D3,2,G2,2,D3,2,D3,2,G2,2,D3,2
+       DATA A2,2,C3,2,C3,2,A2,2,C3,2,C3,2
+       DATA A2,2,C3,2,A2,2,C3,2,C3,2,A2,2
+       DATA C3,2,C3,2,A2,2,C3,2,PA,2
+ENDM#1 DATA 0,0
+MUS#2  DATA PA,26
+RMUS#2 DATA A4,2,B4,2,C5,2,E5,24,PA,2
+       DATA A4,2,B4,2,C5,2,E5,4,D5,2,C5,2
+       DATA D5,4,E5,2,A4,24,PA,4,A4,2
+       DATA B4,2,C5,2,D5,24,PA,2,A4,2
+       DATA B4,2,C5,2,D5,4,C5,2,B4,2,C5,4
+       DATA D5,2,A4,24,PA,4
+ENDM#2 DATA 0,0
+MUS#3  DATA PA,26
+RMUS#3 DATA AX,2,BX,2,CY,2,EY,24,PA,2
+       DATA AX,2,BX,2,CY,2,EY,4,DY,2,CY,2
+       DATA DY,4,EY,2,AX,24,PA,4,AX,2
+       DATA BX,2,CY,2,DY,24,PA,2,AX,2
+       DATA BX,2,CY,2,DY,4,CY,2,BX,2,CY,4
+       DATA DY,2,AX,24,PA,4
+ENDM#3 DATA 0,0
+#endasm
+ 

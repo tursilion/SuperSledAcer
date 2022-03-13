@@ -1,0 +1,244 @@
+Welcome to the world of Super Sled Acer!!
+
+Now you can barrel down Doom Mountain in your very own Super Sno-Racer
+Deluxe sled! Okay... not really... but you can help Super Sled Acer make
+it down the hill. :)
+
+On the way, you'll steer around dangerous obstacles like trees! And rocks!
+And skiers, snowmen, and... well, I'll leave some surprises.
+
+Legaleseish-like stuff
+----------------------
+
+Super Sled Acer is copyrighted 1991 and 1996 by Mike Brent. All rights not
+explicitly licensed to the end user are held by the author. All characters,
+concepts, designs, and distinctive likeness thereof are owned by Mike Brent
+(in other words, the Super S* Acer concept and the character therein. :) )
+
+Trivia: in 1996 this software was reviewed as the absolute worst kind of
+shareware tripe! THE WORST! I'm number one!
+
+More Trivia: Nobody paid the shareware fee. I blame the reviewer who lied
+about the system specs to make his article sound more impressive. ;)
+
+!!SHAREWARE!!
+-------------
+
+Yep! That's right! It's shareware now! If you like it, and want to let me
+know, send me $1! Canadian or US or Australian or whatever is convenient.
+Heck, if you're really ambitious, send two!
+
+Now for the neat part two of this shareware offer. If you like it, but don't
+want to pay, *don't*! But you still have to write me and let me know. :)
+
+Of course, I will still accept postcards, fan-mail, dolphins, bridges, cars,
+and oddly-glowing meteorite chunks as payment.
+
+---
+
+How to run this (briefly)
+-------------------------
+
+Put all the files into a directory. Go into that directory. Type
+'SLEDACER'. (If you are using the option menu, you already know that.)
+
+Yes, I still have that hacked up CGA support. If you're a CGA type, then
+use 'SLEDACER c'. This is the second to last program I expect to use that,
+though.
+
+How to use this once it's running
+---------------------------------
+
+This is my first PC game to utilize the joystick.. and I've already learned
+a few nifty things about the not-so-nifty hardware that drives it, and the
+BIOS, for that matter. You can take 'em both and.....
+
+err... that's off-topic.
+
+Once the title page comes up, it will invite you to press space or fire to
+begin. (If you've just finished a game, you'll see your score in the bottom
+right corner). Press space or fire. You'll then see the main text page/
+options page. (Note: if you use joystick and press fire, you will probably
+be asked to calibrate the joystick first. Just do as it asks.)
+You can access the following options:
+
+(K)eys: When you press K, a flashing Asterix (not of Gaul) will appear after
+the 'Left' indicator. Press the key you want to use to move left. Sorry,
+arrow keys don't work. The asterix will move to the 'Straight' indicator.
+Press the key you want to use to move straight. Finally, the asterix will
+move to the 'Right' indicator. Press the key you want to use to move right.
+The space bar, if used for straight, will display as SPC. For left or
+right, the space bar will appear as a space, to teach you a lesson for being
+so silly. You cannot change the 'brake' key, which is always either
+shift key, cause I said so.
+
+(M)ode: Pressing M will toggle between PROPORTIONAL and DIRECT mode. These
+are used with keyboard play. In direct mode, pressing a direction key will
+start you moving at maximum speed in that direction. In proportional mode,
+pressing a direction key will start you moving slowly in that direction.
+Pressing it repeatedly (up to 8 times) will move you faster in that
+direction. Proportional is an experiment and may not be useful. But you
+really should have a joystick anyway.
+
+(D)ifficulty: Pressing D will cycle through the 3 available difficulty
+levels: Normal, Expert and Easier. The only difference is the speed of the
+game.
+
+(C)alibrate: Pressing C will bring up the joystick calibration screen. If
+you pressed FIRE to begin, you have already done this, and shouldn't have
+to do it again. If you don't have a joystick, you can use ESC to get out
+of this.
+
+(R)ead docs: displays this text file.
+
+Pressing space or fire will start the game. Pressing ESC will at most times
+end the game and the program.
+
+Once in game, you will see your sled on a white hill. You will also see a
+score indicator, your lives remaining, and a brake indicator. Use your
+chosen control system to play, moving left and right to avoid obstacles.
+There is a jump after a few levels, you are allowed to hit that, and you
+will fly through the air for a few seconds, and not hit enemies.
+
+Pressing the fire button or holding shift turns on your brakes, which
+instantly starts the brake guage counting. It also slows you down, but
+will not stop you. If the guage completely fills up, your brakes will
+fail for several seconds, leaving you at top speed. Releasing the brakes
+will start the guage counting down again.
+
+There are nine levels to complete. Each one introduces a new threat (except
+level 5, which introduces the jumps, which are not threatening.)
+
+Level 1 - Watch for trees.. pretty basic.
+Level 2 - Watch for rocks... still... pretty clear sailing
+Level 3 - Watch for skiers... a pain, but avoidable
+Level 4 - Watch for snowmobiles... a bit faster
+Level 5 - Watch for jumps... you can jump over things!
+Level 6 - Watch for snowmen... as if it wasn't crowded enough
+Level 7 - Watch for slides... unstable snow behind you!
+Level 8 and 9 - well... they're top secret. ;)
+
+If you do hit something... you'll fall off your sled. As long as you have
+sleds remaining, you can get back on and continue down the hill..
+
+------------------------------------------
+Bit 'o Babble - Nothing else of importance
+------------------------------------------
+
+It's been nearly 2 months since I did my last game, Super Shooting Acer.
+About time I finally got back on the ball... I'm supposed to be getting
+the better games done, and I still have a few things to learn.
+
+Anyway... as I write this only the bells 'n' whistles of the menu, boot
+code, and the joystick handlers are done. The joystick was trickier than
+I expected... for some reason the BIOS routines delivered unreliable
+results. My own code (swiped in turn from the book 'Tricks of the Gaming
+Gurus'.... good book! Sams Publishing, Authors LaMothe, Ratcliff, Seminatore
+and Tyler, ISBN 0-672-30507-0... recommend it to anyone wanting to do
+games on the PC.. and it's sequel).. since I've been up all night again, I
+guess this one'll take two days to finish. Oh well. [Note: it took a lot
+longer, due to adding new things, experimentation, being busy looking for
+a job, etc etc.]
+
+This game is based exactly on the original TI-99/4A version.. in fact,
+that's the exact same title page that I drew up with TI Artist+ years
+ago... touched up, dithering removed, and more colours added. I've changed
+some of the patterns, though, so there are more surprises.
+
+All my finished work will end up on my web page, along with previews of
+what I've planned to work on. Address is listed above. My list of games
+to do is getting pretty long.. but I'm more keen on some than others.
+
+Right now, I've got:
+
+At The Races - just a simple little horseracing game.. want to get
+SoundBlaster playing samples out of that... also want good animation, but
+I can't draw a horse. ;) Will probably be my last game supporting CGA and
+my old graphics library, as I expect to move up to Turbo C, which doesn't
+do Windoze or Protected Mode like I hoped, but I paid $100 for it and I'm
+going to use the cursed thing. Man... over $600 for the Borland C
+compiler... why are they so bloody expensive? Afraid of competition? ;)
+
+Galactic Exploration - this is a text-based space exploration game... I'm
+not sure if I'll release it, it's meant to be for my BBS. But I want someone
+else to build the designs... ah well.. it may be put on hold or skipped.
+
+Super Speed Acer - I tend to describe this to people as 'Power Drift with
+guns'... a fast, bouncy racing/shooting game... but with full color
+digitized graphics. We'll see how it comes out.. I've high hopes.
+
+Super Space Acer - I've been building up to this game for nearly 5 years...
+based on my original game, which was designed in 1989, and a TI version
+started in 1990 and finished in late 1991. I refuse to confirm even thinking
+about the Atari ST version. :) Spent 9 months trying to convince Atari that
+my current design would fly and fly well on their Jaguar. After talking
+with them and constantly hearing positive feedback (but delays and excuses
+for the delays).. they fired everyone we spoke to, and mailed us a letter
+saying "We apologize for the delay in getting back to you, but Atari
+receives many such proposals of this kind, and we were not able to get
+to yours until this time." Outright lies please me so much... anyway, this
+is a 3D-perspective shooter... and you'll like it. I'm a shooter fan, I
+won't let this one go. ;) (Heh... this is also the one all the parody names
+were based on...)
+
+Super Sales Acer II - not too sure when this'll get done... but it will be.
+The basic idea is to improve the graphics and animation, and provide a lot
+more variety in enemies and things to interact with... generally making
+it what the first game should've been. :)
+
+Super Shooting Acer II - again, this game expands on the original.
+Generally, you'll have proper backgrounds, and mouse control to shoot back.
+More variety again... maybe even a storyline! :)
+
+Super Scaling Acer - another uncertain one... but based loosely on the
+arcade classic 'Crazy Climber'. Remember that one? ;)
+
+Super Strong Acer - a silly digitized wrestling game... but I don't know
+how keen I am on it.
+
+Fighting Game - this game, like Super Space Acer, has been around for a long
+time. Originally conceived about 3 years ago as a fighter for the Atari
+Lynx... guess what? I never got a devkit from Atari. (Ok, I didn't have
+$5k US, either)... it's undergone a lot of revision. Now coming for the
+last resort, the peecee... the latest revision to the plan has made it
+into a chunky 3D fighter. (Don't go expecting tiny and smooth polys...)
+It's attraction is expanability and a user editor to make your own
+fighters. I'm hopeful for this one, but it's a long ways off yet.
+
+New Life II - This is another silly diversion.. Gord and I are supposed
+to do it up sometime... a chance to relive your life... or maybe someone
+else's... but with a silly twist. Not sure how we'll keep the filesize
+down, though. Based on my game New Life, and Gord's game Life II,
+he claims unrelated, both on the Apple II.
+
+Bad Dad - I was bugged to provide an updated version of this. After refusing
+to give Junior the keys to the new Porsche, Dad is locked in the cellar.
+To escape, Dad must swim through a shark-infested moat, climb a staircase
+filled with tumbling boulders, and cross a lawn filled with ravenous power
+mowers. Based on an idea from the Official Computer Hater's Handbook by
+D.J. Arneson, who was probably kidding. ;) An updated copy of my TI
+version.
+
+Mike Ward's Punch-Up - originally done by me on the Apple II (yes, it's a
+Punch-Out clone)... updated with digitized fighters. Again, a silly little
+game.
+
+Mist's War - I've been thinking a lot about this one, I'm rather keen on it.
+I created a character named Mist for a Muck on the net, and I don't seem to
+be able to RP him to the extent I created story for. So.. I'll make a game
+around it, instead. Sorta RPGish, but still an action game. Mist is a
+noble Lion-Morph, who has been cursed by an evil wizard. His body was
+dissolved into a mist of cloud-like vapour. Over time, Mist has learned to
+control his new form, and can temporarily take on solid form. His new
+ability allows him to take several forms, each with different powers. He
+can become a lion, a dragon, a dolphin, and a warrior. To defeat the
+wizard, he must find the magic crystals, and place them in their proper
+places. Then something will happen, and he'll be able to battle the wizard
+to end his curse. (Storyline is still being worked on :) ). Parts of it
+are based on my old Crystal Quest games for the TI-99/4a... or at least..
+what those games were supposed to be like. :)
+
+And that's that for now... I can't think of much more to babble about.
+Go play the game! I'll babble more in the end credits. ;)
+
+2022 Note: None of the above happened. ;)

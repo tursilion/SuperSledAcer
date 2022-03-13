@@ -1,0 +1,21 @@
+Super Sled Acer - By Mike Ward
+------------------------------
+
+Your mission : get down Doom Mountain on your new Super Sno-sled!
+ 
+Use either joystick to control your sled, fire will activate the brakes.
+ 
+WARNING: the braking assembly is not designed for use as a positive braking
+system, but only as an aid in slowing down. Overuse may cause temporary failure!
+ 
+The game MUST be loaded with the Editor/Assembler cartridge in place. Use option
+#5 (Run program file) with the filename DSK1.SLEDACER. The game disk must be in
+drive one to access the pictures.
+ 
+You get three lives. The display includes the life you are currently using.
+ 
+Watch out for: Trees, Rocks, Skiers, Snowmobiles, Snowmen, Tanks, Jumps,
+               Avalanches and missiles!
+ 
+To win: simply get to the bottom of the hill (end of mission 9)
+ 

@@ -1,0 +1,53 @@
+* DEMQ is a dump of the E/A routines and loads at >2000
+* -- this is patched directly into it to replace DSRLNK with
+* direct unpacking code (located in unpack.a99)
+
+	AORG >22B2
+	
+* on entry, WP is >209A
+
+* copy return address to our workspace
+  MOV R14,@>8300
+  LWPI >8300
+  
+* now figure out who to call - there are 4 options
+* R14    File     Vector  Return on C99 Stack (>8300's R14+2)
+*--------------------------------------
+* A4F6 - ACERC		2702    A7F6
+* A4D8 - ACERP		2704    A7F6
+* A4F6 - FINALC		2706    BA24
+* A4D8 - FINALP		2708    BA24
+
+	LI R2,TABLE
+
+  MOV @>831C,R1   * get C stack pointer
+  INCT R1         * point to return address
+  MOV *R1,R1      * get return address
+  CI R1,>BA24     * win picture?
+  JNE NOWIN       * no
+  LI R1,>2706     * later vector
+  JMP LP
+NOWIN
+  LI R1,>2702     * base vector
+LP
+  MOV *R2+,R3
+  JEQ DONE
+  C R3,R0
+  JEQ MATCH
+  INCT R1
+  JMP LP
+  
+MATCH
+  MOV *R1,R0
+  BL *R0
+
+* back to caller, remember to increment R14
+DONE
+  LWPI >209A
+  INCT R14
+  RTWP
+
+TABLE
+  DATA >A4F6,>A4D8,>0000
+  
+  END
